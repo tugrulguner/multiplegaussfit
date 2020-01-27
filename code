@@ -1,6 +1,11 @@
-function [values, gaussdeger, pcasora] = gcfittinglsq(file, xaxis, norm, ZLP, gfit, xtol)
+function [values, gaussdeger, pcasora] = gcfittinglsq(data, xaxis, norm, ZLP, gfit, xtol)
+% here data is for your 3D data, xaxis is for corresponding xaxis for data, norm and ZLP you can use if you want to use normalization function
+% gfit for gaussian filtering level and xtol is the contraint for intensity tolerance of the gaussian that you put to least square method 
+
 
 data = normZLP(file, xaxis, norm, ZLP);
+% You can ignore this function if you are not dealing with EELS spectrum. What it does is simply puts zero-loss peak to 0 eV
+% position, normalizes it, and then subtracts from background.
 
 figure
 du = permute(data,[3 1 2]);
