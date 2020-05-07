@@ -4,7 +4,7 @@ Here 'mapping' is a Matlab code that I wrote to fit single spectrum to multiple 
 imaging consisting of spectrum at each pixel to 2D image through replacing spectrum with corresponding any
 selected gaussian area.
 
-[Figure 1][figure1.png]
+![Figure 1](figure1.png)
 
 This figures illustrates how we can split main spectrum into multiple Gaussian peaks. This code asks you the location of peaks manually and you can determine also how many Gaussian peaks you want to produce. 
 
