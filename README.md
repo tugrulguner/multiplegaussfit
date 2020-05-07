@@ -6,7 +6,7 @@ selected gaussian area.
 
 ![Figure 1](figure1.png)
 
-This figures illustrates how we can split main spectrum into multiple Gaussian peaks. This code asks you the location of peaks manually and you can determine also how many Gaussian peaks you want to produce. 
+This figures illustrates how we can split main spectrum into multiple Gaussian peaks. This code asks you the location of peaks manually and you can determine also how many Gaussian peaks you want to produce. Black line demonstrates the fitted line based on produced Gaussian peaks to check how it fits to original spectrum data.
 
 'normZLP' is a function that 'mapping' uses, which is important if you have actual EELS data and you want to center the 
 zero-loss peak, normalize it and apply baseline correction to the result. It can also be used alone.
