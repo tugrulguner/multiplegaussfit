@@ -3,6 +3,7 @@ function data = normZLP(data, xaxis, norm, ZLP)
 % data is for your 3D EELS data, xaxis is the corresponding xaxis, norm is for normalization parameter
 % ('1' is for normalization based on total electron count, '2' for norm. wrt ZLP area, and '3' for norm. wrt to max. intensity),
 % and ZLP is for to center the zero-loss peak signal to 0 eV if it is true or not if it is false
+% Created by Tugrul Guner, 2019.
 
 rowx = find(xaxis == 0);
 f = waitbar(0, 'Process is starting...');
