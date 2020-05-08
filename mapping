@@ -1,5 +1,5 @@
 function [spectd, specorj, specextd, outimage, imspectd, resultd, valuestd, values] = EELSmapping_TG(file, xaxis, norm, ZLP, gfit, xtol)
-
+% Mapping of 3D spectral data to 2D image function using pre-determined Gaussian peaks. Created by Tugrul Guner, 2019.
 
 data = normZLP(file, xaxis, norm, ZLP);
 
